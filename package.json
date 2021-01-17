@@ -4,21 +4,27 @@
   "scripts": {
     "dev": "pack dev",
     "build": "pack build",
-    "publish": "def p"
+    "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "license": "ISC",
   "dependencies": {
+    "@octokit/core": "^3.2.4",
     "@types/react-dom": "^16.9.5",
+    "hox": "^1.1.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "classnames": "^2.2.6",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@types/classnames": "^2.2.11",
+    "@types/history": "^4.7.8",
+    "@types/node": "^14.14.21",
+    "@types/react-router-dom": "^5.1.7",
     "packjs": "latest",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.1",
     "typescript": "^4.0.3"
-  },
-  "cnpm": {
-    "mode": "npm"
   }
 }
