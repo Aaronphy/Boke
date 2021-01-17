@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Route } from 'react-router-dom';
 import { Location } from 'history';
 import cl from 'classnames';
-import { PageConfig, PageProps } from 'types/index';
+import { PageConfig, PagesProps } from 'types/index';
 import BokeContext from 'components/Context';
 import DefaultNotFounder from 'components/DefaultNotFounder';
 
@@ -41,7 +41,7 @@ const findMatch = (pages: PageConfig[], pathname: string) => {
         });
 };
 
-export default function Page({ notFoundRender = DefaultNotFounder, className = '' }: PageProps) {
+export default function Pages({ notFoundRender = DefaultNotFounder, className = '' }: PagesProps) {
     const { getConfig } = React.useContext(BokeContext);
 
     const { pages } = getConfig!();
