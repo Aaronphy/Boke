@@ -3,12 +3,12 @@ import * as ReactDOM from 'react-dom';
 import { Route, HashRouter } from 'react-router-dom';
 import RootRoute from 'components/RootRoute';
 import BokeContext from 'components/Context';
-import DefaultLayout from '../components/DefaultLayout';
-import DefaultFallBack from '../components/DefaultFallback';
+import DefaultLayout from 'components/DefaultLayout';
+import DefaultFallBack from 'components/DefaultFallback';
 import ErrorBoundary from 'components/ErrorBoundary';
-import NaviLinks from '../components/NaviLinks';
-import Pages from '../components/Pages';
-import { LayoutProps, ContextShape, ErrorComponentProps, Options, OnRouteChange } from 'types/index';
+import NaviLinks from 'components/NaviLinks';
+import Pages from 'components/Pages';
+import { LayoutProps, ContextShape, ErrorComponentProps, Options } from 'types/index';
 
 export default class Boke {
     #options: Options;

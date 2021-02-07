@@ -1,5 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Home } from './pages/Home/Home';
+import * as React from 'react';
+import Core from './core/entry/index';
+import config from './config';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+const app = new Core({
+    config
+});
+
+app.layout();
+
+app.start('#root');

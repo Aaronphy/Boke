@@ -54,7 +54,6 @@ export default function Pages({ notFoundRender = DefaultNotFounder, className = 
         if (pagesVM.has(page)) return;
         pagesVM.set(page, { Component: page.render, computedPath: page.__computedPath });
     });
-
     const renderPage = (locaiton: Location) => {
         const matches = findMatch(listPages, locaiton.pathname);
         return (
