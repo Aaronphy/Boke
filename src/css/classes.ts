@@ -1,0 +1,9 @@
+export const layout = 'h-screen w-screen bg-gray-200 flex flex-col sm:flex-row min-h-0 min-w-0 overflow-hidden font-sans';
+export const aside = 'sm:h-full sm:w-48 w-full h-12 bg-white text-gray-200 fixed sm:static';
+export const body ='sm:h-full flex-1 flex flex-col min-h-0 min-w-0 overflow-auto p-14 sm:p-2';
+export const link = 'relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6';
+export const activeLink ='bg-gray-50 text-gray-600 border-blue-400 pr-6 text-gray-800 border-l-4 border-transparent';
+export const linkIcon ='inline-flex justify-center items-center ml-4 w-5 h-5';
+export const linkText ='ml-2 text-sm tracking-wide truncate';
+export const popUpMenuShow = 'sm:hidden bg-white font-semibold z-10 rounded-bl-md flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0 w-1/2 md:w-auto px-3 md:px-0 flex-col md:flex-row md:translate-y-0 md:mt-1 md:items-center md:mx-1 md:uppercase mt-12 shadow';
+export const popUpMenuHide = 'sm:hidden bg-white font-semibold z-10 rounded-bl-md flex absolute top-0 right-0 transition-all duration-500 transform translate-x-0 w-1/2 md:w-auto px-3 md:px-0 flex-col md:flex-row md:translate-y-0 md:mt-1 md:items-center md:mx-1 md:uppercase -translate-y-full';

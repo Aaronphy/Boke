@@ -4,6 +4,7 @@ module.exports = {
     tsx: true,
     less: true,
     entry:"./src/index.tsx",
+    disableCSSModules:true,
     html: {
         title: 'Aaronphy',
         template: 'public/index.html'
@@ -22,10 +23,7 @@ module.exports = {
         "utils": path.resolve(__dirname, 'src/core/utils/'),
         "pages": path.resolve(__dirname, 'src/pages/'),
         "servcies": path.resolve(__dirname, 'src/servcies/'),
-        "types":path.resolve(__dirname, 'src/core/types/')
-    },
-    postcssPlugins:[
-        ['postcss-import',{}],
-        ["autoprefixer",{}]
-    ]
+        "types":path.resolve(__dirname, 'src/core/types/'),
+        "css":path.resolve(__dirname,'src/css/')
+    }
 };

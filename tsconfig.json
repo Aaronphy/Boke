@@ -32,7 +32,8 @@
       "pages/*": ["src/pages/*"],
       "services/*": ["src/services/*"],
       "types/*": ["src/core/types/*"],
-      "servcies/*": ["src/servcies/*"]
+      "servcies/*": ["src/servcies/*"],
+      "css/*": ["src/css/*"]
     }
   },
   "include": ["./src/**/*", "./typings.d.ts"]

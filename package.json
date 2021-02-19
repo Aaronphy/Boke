@@ -6,11 +6,14 @@
     "build": "pack build",
     "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "@ant-design/icons": "^4.5.0",
     "@octokit/core": "^3.2.4",
+    "@octokit/graphql": "^4.6.0",
     "@types/react-dom": "^16.9.5",
     "classnames": "^2.2.6",
+    "flat-color-icons": "^1.1.0",
     "hox": "^1.1.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

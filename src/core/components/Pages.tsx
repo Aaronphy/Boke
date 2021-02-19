@@ -49,7 +49,6 @@ export default function Pages({ notFoundRender = DefaultNotFounder, className = 
     const listPages = React.useMemo(() => {
         return wrapPages(pages);
     }, [pages]);
-
     listPages.forEach((page: PageConfig) => {
         if (pagesVM.has(page)) return;
         pagesVM.set(page, { Component: page.render, computedPath: page.__computedPath });

@@ -14,9 +14,7 @@ interface RootRouteProps {
 export default function RootRoute({ history, location, onRouteChange, children }: RootRouteProps) {
     const { getConfig } = React.useContext(BokeContext);
 
-    console.log(getConfig!());
     React.useEffect(() => {
-        console.log('ccc');
         let unlisten: () => void = noop;
         if (typeof onRouteChange === 'function') {
             unlisten = history.listen(onRouteChange);

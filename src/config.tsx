@@ -1,4 +1,5 @@
-import { ConfigOption } from './core/entry/index'
+import { ConfigOption } from './core/entry/index';
+import { HomeOutlined } from '@ant-design/icons';
 import Home from './pages/Home/Home';
 
 const config:ConfigOption = {
@@ -7,7 +8,8 @@ const config:ConfigOption = {
         name:'home',
         title:'主页',
         render:Home,
-        showMenu:true
+        showMenu:true,
+        icon:HomeOutlined,
     }]
 }
 
